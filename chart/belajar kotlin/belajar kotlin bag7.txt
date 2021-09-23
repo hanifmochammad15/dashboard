@@ -1,0 +1,40 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+fun main(args: Array<String>) {
+    //loop
+   
+    print("for (i in 1..5)print(i)= ")
+    for (i in 1..5)print(i)
+    println()
+    print("for (i in 5..1)print(i)= ")
+    for (i in 5..1)print(i)
+    println()
+    print("for (i in 5 downTo 1)print(i)= ")
+    for (i in 5 downTo 1)print(i)
+    println()
+    print("for (i in 1..5 step 2)print(i)= ")
+    for (i in 1..5 step 2)print(i)
+    println()
+    print("for (i in 5 downTo 1 step 2)print(i)= ")
+    for (i in 5 downTo 1 step 2)print(i)
+    println()
+    var language=arrayOf("Ruby","Kotlin","Pyhton","Java")
+    for(item in language)
+	println(item)    
+    for (item in language.indices){
+        if(item%2 == 0)
+        println(language[item])
+    }
+    println()
+    var text = "Kotlin"
+    for(letter in text){
+        println(letter)
+    }
+    println()
+    for(item in text.indices){
+        println(text[item])
+    }
+    
+}

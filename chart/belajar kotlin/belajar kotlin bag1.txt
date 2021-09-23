@@ -1,0 +1,45 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+
+fun main(args: Array<String>) {
+    //default
+    println("Hello, world!")
+    //mutable variable
+    var myName="Mochammad Hanif"
+    myName="Mochammad Hanif Ismail"
+    println (myName) //  println ("$myName")
+    //Immutable variable
+    val CardID=103004989849
+    //CardID=1111111111111111111111//Compilation Error
+    println (CardID)
+    //Tipe data
+    val a :Int =10000
+    val d :Double =100.00
+    val f :Float =10000.00f
+    val l :Long =100000000
+    val s :Short =10
+    val b : Byte =1
+    println("Value INT "+a)
+    println("Value Double "+d)
+    println("Value Float "+f)
+    println("Value Long" +l)
+    println("Value Short "+s)
+    println("Value Byte "+b)
+    //Character
+    val key :Char
+    key='c'//tipe data char hanya menggunakan satu kutipan dan hanya bisa satu karakter
+    println ("$key")
+    //Boolean
+    val keputusan = true
+    println("$keputusan")
+    //Strings
+    val Company = "Udacoding"
+    println("$Company")
+    val greeting ="""HI, $Company..
+    Welcome To Kotlin Class !""" //lebih dari satu baris menggunakan 3 tandapetik
+    println("$greeting")
+    
+}
+

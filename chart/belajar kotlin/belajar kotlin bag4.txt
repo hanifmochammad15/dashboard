@@ -1,0 +1,30 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+import java.util.Scanner
+fun main(args: Array<String>) {
+    println("Hello, world!")
+    //index access Operator
+    val a= intArrayOf(1,2,3,4,-1)
+    println(a[1])
+    a[1]=12
+    println(a[1])
+    //input output
+    //output
+    println("1. println")
+    println("2. println")
+    print("1. print")
+    print("2. print")
+    //input
+    print("Enter text:")
+    val stringInput = readLine()!!
+    println("You entered: $stringInput")
+	//membuat sebuah instance yang mengambil input dari input standar (keyboard)
+    val reader = Scanner(System.`in`)
+    print("Enter a number : ")
+    //nextInt() membaca bilangan bulat/integer berikut dari keyboard
+    var integer:Int = reader.nextInt()
+    println("ter masukan : $integer")
+
+}

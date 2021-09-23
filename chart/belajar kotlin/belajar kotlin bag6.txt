@@ -1,0 +1,55 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+fun main(args: Array<String>) {
+val n1=3
+val n2=4
+val n3=-2
+val max= if(n1 > n2){
+				if(n1 > n3)
+    n1
+    else
+    n3
+}else{
+    if(n2 > n3)
+    n2
+    else
+    n3
+}    
+    println("max=$max")
+    
+ val a = -9
+ val b = -11
+ val c = if(a > b){
+     println("$a besar dari $b.")
+     println("val c memiliki value a.")
+     a
+     }else{
+          println("$b besar dari $a.")
+          println("val c memiliki value b.")
+          b
+     }
+     println("c=$c")
+    var num =3 
+    var abc=if(num==3){
+        num * 2
+    }else{
+        num
+    }
+    var numProvide=when(abc){
+        1-> "satu"
+        2->"dua"
+        3->"tiga"
+        4->"empat"
+        5->"lima"
+        6->"enam"
+        else -> "wrong number"
+    }
+    println(numProvide)
+    //Loop
+    for (abc in 1..10){
+         println(abc)
+
+    } 
+}

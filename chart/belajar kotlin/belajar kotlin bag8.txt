@@ -1,0 +1,28 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+
+fun main(args: Array<String>) {
+       var i:Int=1
+    while(i <= 5){
+        println(i)
+        ++i
+    }
+    var sum=0
+    var x=100
+    while( x!= 0){
+        sum+=x
+       // println(sum)
+        --x
+    }
+    var sum2:Int=0
+    var input:String
+    
+    do{
+        print("Masukan Integer : ")
+        input = readLine()!!
+        sum2 += input.toInt()
+    }while(input != "0")
+    print("sum = $sum2")
+}

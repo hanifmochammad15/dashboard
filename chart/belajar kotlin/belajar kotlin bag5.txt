@@ -1,0 +1,64 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+
+fun main(args: Array<String>) {
+    var a : Int=1000
+     var b : Double=1000.05
+    var c : Number = a+b
+    var nama = "Hanif"
+    println ( ""+a + b + c+"$nama" )
+    val number :IntArray= intArrayOf(1,2,3,4,5)
+    println(""+ number[3]+ "$nama")
+    val numbers:MutableList<Int> = mutableListOf(1,2,3)
+    println(numbers)
+    val readonly:List<Int> = numbers
+     numbers.add(4)
+    println(readonly)
+    val i : Int = 5
+    for(j in 1..4)
+    println (j)
+	if(i in readonly){
+        println("Number " + i)
+    }else{
+        println("no")
+    }
+    
+    var object1 = bikinClassSample <String> ("JAVA")
+    var object2 = bikinClassSample <Int> (10)
+    
+ 	var object3 = genericsExample<Int>(10)
+    var object4= genericsExample<String>("Hanif")
+    
+    var age :Int = 12
+    age *= 5 // age = age *5
+    println("age = $age")
+    var objec =genericSample <String>("Hanif")
+    
+    var angka:Int = 3
+    var jumlah = Penjumlahan<Int>(angka)
+    
+    var ListArray : MutableList<Int> = mutableListOf(1,2,3)
+    println(ListArray)
+}
+class Penjumlahan<T>(input :T){
+    init{
+            println(input)
+        }    
+    }
+class bikinClassSample <A> (input:A){
+    init{
+        println("Terpanggil oleh" + input)
+    }
+}
+class genericsExample<T>(Input :T){
+    init{
+        println("Terpanggil oleh" + Input)
+    }
+}
+class genericSample<T>(Input : T){
+    init{
+        println("hanif $Input")
+    }
+}

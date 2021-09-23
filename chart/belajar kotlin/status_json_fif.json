@@ -1,0 +1,4 @@
+{"contractNo": "101000085619", "orderStatus": "1", "errDesc": "success", "totalObject" : 1, "detailPostOrder": [{"polisNumber": "P13388127435;000", "objSeqNo": 1}]}
+{"contractNo": "219000041419", "orderStatus": "2", "errDesc": "premi not valid, bintang 3759900 vs fif 3400800", "totalObject" : 1, "detailPostOrder": [{"polisNumber": "", "objSeqNo": 1}]}
+{"contractNo": "219000044619", "orderStatus": "2", "errDesc": "premi not valid, bintang 726000 vs fif 732500", "totalObject" : 1, "detailPostOrder": [{"polisNumber": "", "objSeqNo": 1}]}
+{"contractNo": "219000044719", "orderStatus": "1", "errDesc": "success", "totalObject" : 1, "detailPostOrder": [{"polisNumber": "P52388102087;000", "objSeqNo": 1}]}

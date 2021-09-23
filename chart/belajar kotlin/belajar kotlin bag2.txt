@@ -1,0 +1,47 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+
+fun main(args: Array<String>) {
+    //Arrays
+    val numbers : IntArray = intArrayOf(1,2,3,4,5)
+    println("Hey! I am array Example " +numbers[2])
+    //Collections
+    val angka : MutableList<Int> = mutableListOf(1,2,3) //list yang bisa diedit
+    val readOnly : List<Int> = angka //list yg tidak bisa diedit
+    println("my immutable list ---" + angka)
+    angka.add(4)
+    println("my immutable list after addition---" + angka)
+    println(readOnly)
+    //Ranges
+    val i:Int =2
+    for (j in 1..5)
+    print(j)
+    if(i in 1..10){//sama dengan 1<= i && i <=10
+        println("  number "+i)
+    }
+    //Konvensi
+    val integer:Int=1
+    val number:Number = integer
+    println(number)
+    
+    var object1 = genericsExample<String> ("JAVA")
+    var object2 = genericsExample<Int> (10)
+    
+    var object3 = genericsExample2<Int>(10)
+    var object4 = genericsExample2<Double>(10.00)
+     println(object3)
+     println(object4)
+}
+class genericsExample<T>(input:T){
+    init{
+        println("terpanggil oleh " + input)
+    }
+}
+
+class genericsExample2<out T>(input:T){
+    init{
+        println("I am getting called with the value " + input)
+    }
+}

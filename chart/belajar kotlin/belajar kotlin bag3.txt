@@ -1,0 +1,66 @@
+/**
+ * We declare a package-level function main which returns Unit and takes
+ * an Array of strings as a parameter. Note that semicolons are optional.
+ */
+
+fun main(args: Array<String>) {
+    println("Hello, world!")
+    //Operator
+    val number1:Double =12.5
+    val number2=3.5
+ 	var result:Double
+    result= number1 + number2
+    println("number1 + number2 = $result")
+    result= number1 - number2
+    println("number1 - number2 = $result")
+    result= number1 * number2
+    println("number1 * number2 = $result")
+    result= number1 / number2
+    println("number1 / number2 = $result")
+    result= number1 % number2
+    println("number1 % number2 = $result")
+
+    val start="Ruko Golden Madrid. "
+    val middle="E310 "
+    val end="UdaCoding"
+    //Operator Assigment
+    val resultstring= start + middle + end
+    println(resultstring)
+	val age =5
+    var number = 12
+    number *= 5 // number = number*5
+    println("number= $number")
+	//Operator Decrement
+    val a=12
+    val b= true
+    var c=5 
+    var resultNew: Int
+    var booleanResult : Boolean
+    resultNew = -a // a*-1
+    println("-a= $resultNew")
+    booleanResult = !b
+    println("!b= $booleanResult")
+	--c // c-1
+    println("--c = $c")
+    //Operator Perbandingan
+    val max =if(a > c){
+        println("a besar dari c")
+        a
+    }else{
+        println("c besar dari a")
+        c
+    }
+    println("max =$max")
+    val a1=10
+    val b1 =9
+    val c1 =-1
+    //Operator Logika
+    val resultLogika: Boolean
+    resultLogika= (a1 > b1) && (a1 > c1) //resultLogika = (a1>b1) and (a1>c1)
+    println(resultLogika)
+    //Operator In
+    val numbersArray= intArrayOf(1,4,42,-3)
+    if(4 in  numbersArray){
+        println("array numbers berisikan 4.")
+    }
+}
